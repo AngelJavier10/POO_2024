@@ -1,10 +1,11 @@
-No_Multiplicacion=input("Seleccione la tabla de multiplicacion: Opciones 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ")
+"""
+6.- Mostrar todas las tablas del 1 al 10. 
+Mostrando el titulo de la tabla y luego las multiplicaciones del 1 al 10
+"""
 
-if No_Multiplicacion==("1"):
- i=1
- num=1
-for num in range(1,10):
-  resultado=num*i
-  print(num+"X"+i)
-num+=1
-
+for i in range(1,11):
+    print("-----------------------")
+    print(f"Tabla del {i}")
+    print("-----------------------")
+    for j in range(1,11):
+        print(f"{i} x {j} = {i*j}")
