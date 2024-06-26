@@ -48,7 +48,7 @@ import listas
 
 #    print(f"No se encontro la palabra dentro de la lista")
 
-   # ejemplo.3 Listamultilinea o multimensional (matriz)para crear una agenda telefonica
+# ejemplo.3 Listamultilinea o multimensional (matriz)para crear una agenda telefonica
 
 # agenda=[
 #     ["Carlos",6181234567]
@@ -74,11 +74,11 @@ import listas
 def insertarPeliculas():
     pelicula=input("Ingresar la pelicual: ")
     Peliculas.append(pelicula)
-    espereTecla()
+    Esperar=()
 def eliminarPeliculas():
     pelicula=input("Ingrese la pelicual: ")
     pelicula.removeprefix
-    espereTecla()
+    Esperar=()
 
 
 Peliculas=[]
