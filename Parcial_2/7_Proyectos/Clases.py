@@ -21,6 +21,7 @@ class figuras:
       self.ancho=ancho 
 
 
+
 class rectangulo (figuras):
    def __init__(self,largo,ancho,CalcularArea):
       super().__init__(largo,ancho)
@@ -34,7 +35,29 @@ class rectangulo (figuras):
    def getInfo(self):   
         print(f"Marca: {self.getlargo()} {self.getancho()}") 
 
+
+
 class Circulo (figuras):
+   def __init__(self,largo,ancho,radio,CalcularArea):
+      super().__init__(largo,ancho)
+      self.CalcularArea=CalcularArea
+      self.radio=radio
+
+   def getTraccion(self):
+    return self.CalcularArea
+
+   def setCerrada(self,CalcularArea):
+     self.CalcularArea=CalcularArea
+   def getTraccion(self):
+    return self.radio
+
+   def setCerrada(self,radio):
+     self.radio=radio
+
+
+
+
+class Triangulo (figuras):
    def __init__(self,largo,ancho,radio,CalcularArea):
       super().__init__(largo,ancho)
       self.CalcularArea=CalcularArea

@@ -113,8 +113,8 @@ class Coches:
 class Camiones(Coches):
    def __init__(self,color,marca,modelo,velocidad,caballaje,plazas,eje,capacidadCarga):
     super().__init__(color,marca,modelo,velocidad,caballaje,plazas)
-    self.eje=eje
-    self.capacidadCarga=capacidadCarga
+    self._eje=eje
+    self._capacidadCarga=capacidadCarga
 
    __tipo_carga=""
 
